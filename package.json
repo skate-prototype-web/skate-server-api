@@ -1,0 +1,33 @@
+{
+  "name": "skate-server-api",
+  "version": "1.0.0",
+  "description": "API and Server for Skate Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js",
+    "prod": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShlomoLove/skate-server-api.git"
+  },
+  "keywords": [
+    "Node",
+    "Mongo",
+    "Mongoose",
+    "Express"
+  ],
+  "author": "Scott Nassau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShlomoLove/skate-server-api/issues"
+  },
+  "homepage": "https://github.com/ShlomoLove/skate-server-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2"
+  }
+}
