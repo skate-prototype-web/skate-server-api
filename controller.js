@@ -11,4 +11,16 @@ const getAllParks = (req, res) => {
   })
 }
 
-module.exports = { getAllParks }
+const getOnePark = (req, res) => {
+  console.log (req.params, 'req.params.id')
+  db.findOne({_id: req.params.id})
+  .then(park => {
+    console.log (park)
+    res.json(park)
+  })
+  .catch(error => {
+    res.status(400).send(`error processing request: ${error}`)
+  })
+}
+
+module.exports = { getAllParks, getOnePark }
